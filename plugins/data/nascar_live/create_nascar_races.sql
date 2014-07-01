@@ -1,0 +1,22 @@
+create table if not exists nascar_races(
+	RaceID INTEGER PRIMARY KEY,
+	HistoricalRaceID INTEGER DEFAULT -1,
+	SeriesID INTEGER DEFAULT -1,
+	RunID INTEGER DEFAULT -1,
+	RunName TEXT DEFAULT '',
+	RunType INTEGER DEFAULT -1,
+	TrackID INTEGER DEFAULT -1,
+	TrackName TEXT DEFAULT '',
+	TrackLength REAL DEFAULT 0.00,
+	ElapsedTime INTEGER DEFAULT -1,
+	CurrentLapNumber INTEGER DEFAULT -1,
+	LapsToGo INTEGER DEFAULT -1,
+	LapsInRace INTEGER DEFAULT -1,
+	FlagState INTEGER DEFAULT -1,
+	BestLapTime INTEGER DEFAULT -1,
+	NumberOfCautionSegments INTEGER DEFAULT -1,
+	NumberOfCautions INTEGER DEFAULT -1,
+	NumberOfLeadChanges INTEGER DEFAULT -1,
+	NumberOfLeaders INTEGER DEFAULT -1,
+	Weather TEXT DEFAULT ''
+);
